@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ecandroid.ebs.ec">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="Home"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Login" />
+        </activity>
+        <activity
+            android:name=".Supervisorhome"
+            android:label="Home"
+            android:parentActivityName=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Login" />
+        </activity>
+        <activity
+            android:name=".Downloaddata"
+            android:label="Download Data"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".Setupitems"
+            android:label="View Items"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".Addnewitems"
+            android:label="Add new Item"
+            android:parentActivityName=".Setupitems">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Setupitems" />
+        </activity>
+        <activity
+            android:name=".ScanEmployee"
+            android:label="Scan Employee"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITy"
+                android:value=".ScanEmployee" />
+        </activity>
+        <activity
+            android:name=".ScanEmployeeAddItem"
+            android:label="Add Item"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ScanEmployee3Addnewtransaction">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScanEmployee3Addnewtransaction" />
+        </activity>
+        <activity
+            android:name=".ScanEmployee3"
+            android:label="Scan Employee"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScanEmployee3" />
+        </activity>
+        <activity
+            android:name=".ScanEmployee3Addnewtransaction"
+            android:label="Add new transcation"
+            android:parentActivityName=".ScanEmployee3">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScanEmployee3Addnewtransaction" />
+        </activity>
+        <activity
+            android:name=".ScanEmployee3Details"
+            android:label="Employee Details"
+            android:parentActivityName=".ScanEmployee3Addnewtransaction">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScanEmployee3Details" />
+        </activity>
+        <activity
+            android:name=".Appendtotextfiles"
+            android:label="Upload Data"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Appendtotextfiles" />
+        </activity>
+        <activity
+            android:name=".ImagePreview"
+            android:label="Item Image Preview"
+            android:parentActivityName=".ScanEmployeeAddItem">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ImagePreview" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ecandroid.ebs.ec.Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/thegreen"
+        android:layout_weight=".8">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+
+                        <Button
+                            android:id="@+id/btndownloaddata"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_weight="1"
+                            android:paddingTop="100dp"
+                            android:text="Download Data"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtviewdownloaddata"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="13dp"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="@color/thegreen"
+                            android:textSize="70sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+
+                        <Button
+                            android:id="@+id/btnsetupitems"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_weight="1"
+                            android:paddingTop="100dp"
+                            android:text="View Items"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtviewsetupitems"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="13dp"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="@color/thegreen"
+                            android:textSize="70sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+
+                        <Button
+                            android:id="@+id/btnscanemployee"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_weight="1"
+                            android:paddingTop="100dp"
+                            android:text="Start Employee Scan"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtviewstartscan"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="13dp"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="@color/thegreen"
+                            android:textSize="70sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+
+                        <Button
+                            android:id="@+id/btnappendtotextfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_weight="1"
+                            android:paddingTop="100dp"
+                            android:text="Upload Data"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtviewappendtotextfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="13dp"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="@color/thegreen"
+                            android:textSize="70sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+
+                        <Button
+                            android:id="@+id/btngeneratereportsummary"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_weight="1"
+                            android:paddingTop="100dp"
+                            android:text="Generate Report Summary"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtviewgeneratereportsummary"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="13dp"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="@color/thegreen"
+                            android:textSize="70sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5">
+
+                        <Button
+                            android:id="@+id/btngeneratereportpercustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_weight="1"
+                            android:paddingTop="100dp"
+                            android:text="Generate Report Per Customer"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtviewgeneratereportpercustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="13dp"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="@color/thegreen"
+                            android:textSize="70sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

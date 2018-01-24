@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ecandroid.ebs.ec.Appendtotextfiles">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="50dp">
+
+            <ProgressBar
+                android:id="@+id/loadingbar"
+                style="@android:style/Widget.Holo.ProgressBar.Large"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:indeterminate="false" />
+
+            <TextView
+                android:id="@+id/txtviewstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Checking server connection. Please wait..."
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btncheckconnection"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Check Connection"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="50dp">
+
+        <Button
+            android:id="@+id/btnstartppend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="80dp"
+            android:text="Start Upload"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtviewdownloaddata"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/thegreen"
+            android:textSize="100dp" />
+    </RelativeLayout>
+</LinearLayout>

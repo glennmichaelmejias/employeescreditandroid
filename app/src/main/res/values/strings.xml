@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Consolidated Employee\'s Credit</string>
+    <string name="title_activity_scan_employee_tabbed">ScanEmployeeTabbed</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="serveraddress">http://172.16.43.168/eBS/ec_employeeandroid/index/</string>
+</resources>

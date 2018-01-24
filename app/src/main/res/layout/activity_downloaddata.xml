@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ecandroid.ebs.ec.Downloaddata">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="50dp"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/loadingbar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:max="100"
+                android:progress="1"
+                />
+
+            <TextView
+                android:id="@+id/txtviewstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:text="Checking server connection. Please wait..." />
+
+            <Button
+                android:id="@+id/btncheckconnection"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="15dp"
+                android:text="Check Connection" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="50dp">
+
+        <Button
+            android:id="@+id/btnstartdownload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="80dp"
+            android:text="Start download"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtviewdownloaddata"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/thegreen"
+            android:textSize="100dp" />
+    </RelativeLayout>
+</LinearLayout>
